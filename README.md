@@ -282,7 +282,20 @@ OPEN TO: Collaboration • Technology Projects • Creative Experiments • New 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Animated contribution snake" />
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/ted0103/ted0103/output/github-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/ted0103/ted0103/output/github-snake.svg"
+  />
+  <img
+    alt="GitHub contribution snake"
+    src="https://raw.githubusercontent.com/ted0103/ted0103/output/github-snake.svg"
+  />
+</picture>
 
 <br/><br/>
 
