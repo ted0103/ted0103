@@ -88,74 +88,17 @@ def svg(title: str, desc: str, width: int, height: int, body: str, style: str = 
 
 def label(fonts: dict[str, TTFont], number: str, title: str, meta: str) -> str:
     body = (
-        '<defs><linearGradient id="label-title-fill" x1="0" x2="1">'
-        '<stop stop-color="#FFFFFF"/><stop offset=".48" stop-color="#00A4FF"/>'
-        '<stop offset="1" stop-color="#00E7F5"/></linearGradient>'
-        '<filter id="label-title-glow" x="100" y="0" width="760" height="88" filterUnits="userSpaceOnUse">'
-        '<feGaussianBlur stdDeviation="2.2" result="blur"/><feMerge><feMergeNode in="blur"/>'
-        '<feMergeNode in="SourceGraphic"/></feMerge></filter></defs>'
-        '<rect width="1200" height="88" rx="2" fill="#04044A"/>'
-        '<path d="M0 87.5H1200" stroke="#00E7F5"/>'
-        '<path d="M102 18V70" stroke="#00A4FF" stroke-width="2"/>'
-        + outlined(fonts["mono"], number, 28, 59, 34, "#00E7F5")
-        + outlined(
-            fonts["display"],
-            title,
-            132,
-            61,
-            42,
-            "url(#label-title-fill)",
-            path_attrs=' stroke="#000675" stroke-width="1.1" paint-order="stroke fill" vector-effect="non-scaling-stroke"',
-            group_attrs=' filter="url(#label-title-glow)"',
-        )
-        + outlined(fonts["mono"], meta, 1168, 55, 13, "#00A4FF", "end")
+        '<defs><linearGradient id="label-bg" x1="0" y1="0" x2="1200" y2="88" gradientUnits="userSpaceOnUse">'
+        '<stop stop-color="#1E90FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs>'
+        '<rect width="1200" height="88" rx="2" fill="url(#label-bg)"/>'
+        '<path d="M0 0H560V88H0Z" fill="#04044A"/>'
+        '<path d="M0 87.5H1200" stroke="#04044A"/>'
+        '<path d="M102 18V70" stroke="#FFFFFF" stroke-width="2" opacity=".72"/>'
+        + outlined(fonts["mono"], number, 28, 59, 34, "#FFFFFF")
+        + outlined(fonts["display"], title, 132, 61, 42, "#FFFFFF")
+        + outlined(fonts["mono"], meta, 1168, 55, 13, "#04044A", "end")
     )
     return svg(f"{number} / {title}", f"Section heading: {title}", 1200, 88, body)
-
-
-def hero(fonts: dict[str, TTFont]) -> str:
-    style = """
-      .scan,.pulse{transform-box:fill-box;transform-origin:center}.scan{animation:scan 7s ease-in-out infinite}.pulse{animation:pulse 4.5s ease-in-out infinite}
-      @keyframes scan{0%,100%{transform:translateX(-180px);opacity:.05}50%{transform:translateX(1180px);opacity:.48}}
-      @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
-      @media (prefers-reduced-motion:reduce){.scan,.pulse{animation:none}}
-    """
-    grid = "".join(f'<path d="M0 {y}H1200" stroke="#00A4FF" opacity=".08"/>' for y in range(40, 401, 40))
-    grid += "".join(f'<path d="M{x} 0V420" stroke="#00A4FF" opacity=".06"/>' for x in range(40, 1200, 40))
-    body = (
-        '<defs><linearGradient id="hero-bg" x1="0" y1="0" x2="1" y2="1">'
-        '<stop stop-color="#00A4FF"/><stop offset=".34" stop-color="#000675"/>'
-        '<stop offset=".72" stop-color="#04044A"/><stop offset="1" stop-color="#020217"/></linearGradient>'
-        '<linearGradient id="horizon" x1="0" x2="1"><stop stop-color="#00E7F5"/>'
-        '<stop offset=".48" stop-color="#00A4FF"/><stop offset="1" stop-color="#000675"/></linearGradient>'
-        '<radialGradient id="glow"><stop stop-color="#00E7F5" stop-opacity=".28"/>'
-        '<stop offset="1" stop-color="#04044A" stop-opacity="0"/></radialGradient></defs>'
-        '<rect width="1200" height="420" rx="8" fill="url(#hero-bg)"/>'
-        '<rect width="1200" height="420" rx="8" fill="#020217" opacity=".22"/>'
-        '<circle cx="870" cy="192" r="320" fill="url(#glow)"/>'
-        + grid
-        + '<path d="M-40 354C280 182 710 125 1240 238" fill="none" stroke="url(#horizon)" stroke-width="2"/>'
-        '<path d="M70 354C335 230 720 186 1138 232" fill="none" stroke="#00A4FF" opacity=".35"/>'
-        '<ellipse cx="875" cy="202" rx="255" ry="112" fill="none" stroke="#00E7F5" opacity=".28" transform="rotate(-10 875 202)"/>'
-        '<ellipse cx="875" cy="202" rx="330" ry="145" fill="none" stroke="#00A4FF" opacity=".15" transform="rotate(-10 875 202)"/>'
-        '<g class="pulse"><circle cx="1080" cy="139" r="5" fill="#00E7F5"/><circle cx="1080" cy="139" r="14" fill="none" stroke="#00E7F5" opacity=".4"/></g>'
-        '<g class="scan"><rect x="0" width="150" height="420" fill="#00E7F5" opacity=".08"/></g>'
-        '<path d="M52 54H176M52 54V106M1024 54H1148M1148 54V106M52 314V366M52 366H176M1148 314V366M1024 366H1148" stroke="#00E7F5" opacity=".65"/>'
-        + outlined(fonts["mono"], "TTH / 0103", 58, 98, 18, "#00E7F5")
-        + outlined(
-            fonts["display"],
-            "TAN TED HANG",
-            58,
-            223,
-            78,
-            "#FFFFFF",
-            path_attrs=' stroke="#04044A" stroke-width=".8" paint-order="stroke fill" vector-effect="non-scaling-stroke"',
-        )
-        + outlined(fonts["mono"], "INFORMATION SYSTEMS + ARTIFICIAL INTELLIGENCE", 62, 264, 18, "#00A4FF")
-        + outlined(fonts["mono"], "MALAYSIA  /  SIGNAL ONLINE", 62, 337, 15, "#FFFFFF")
-        + outlined(fonts["mono"], "BUILDING CLEAR SYSTEMS FOR REAL PEOPLE", 1142, 337, 13, "#00E7F5", "end")
-    )
-    return svg("Tan Ted Hang — signal horizon", "A futuristic cyan and navy signal horizon introducing Tan Ted Hang.", 1200, 420, body, style)
 
 
 def project(fonts: dict[str, TTFont]) -> str:
@@ -225,7 +168,6 @@ def tech_stack(fonts: dict[str, TTFont]) -> str:
 
 def render(fonts: dict[str, TTFont]) -> dict[str, str]:
     return {
-        "hero-signal.svg": hero(fonts),
         "label-profile.svg": label(fonts, "01", "PROFILE", "HUMAN / SYSTEM / PURPOSE"),
         "label-featured.svg": label(fonts, "02", "FEATURED SYSTEM", "CELESTIAL ARCHIVE"),
         "label-capabilities.svg": label(fonts, "03", "CAPABILITIES", "BUILD / LEAD / CREATE"),

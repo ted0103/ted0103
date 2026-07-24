@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1><img width="1200" height="420" src="./assets/profile/hero-signal.svg" alt="Tan Ted Hang — Information Systems and AI student in Malaysia" /></h1>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050816,45:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=48&fontAlignY=38&desc=Building%20Technology%20with%20Purpose&descAlignY=59&animation=fadeIn" alt="Tan Ted Hang — Building Technology with Purpose" />
 
 <picture>
   <source media="(prefers-reduced-motion: no-preference)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=00E7F5&center=true&vCenter=true&width=1000&height=64&lines=Information+Systems+%2B+Artificial+Intelligence;Creative+Technologist+%2B+Visual+Storyteller;Building+Human-Centered+Systems" />
