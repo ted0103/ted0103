@@ -17,7 +17,11 @@
 
 I'm Ted, an Information Systems and AI student in Malaysia. I build at the point where technology, design, and people meet—turning complex ideas into systems that feel clear, useful, and human.
 
-As a Society Chairperson, I've learned that direction matters, but people matter more. I bring that into every project: listen closely, make the goal visible, and help the team move together.
+Through chairing a society, I've learned that direction matters, but people matter more. I bring that into every project: listen closely, make the goal visible, and help the team move together.
+
+**SELECTED SIGNALS** — Gold Medal, AI Video Project · Society Chairperson · School + State Event Coordination · Debate + Chess
+
+The result I value most is learning how to connect technical thinking with a story people can actually follow.
 
 > **NEXT EXPERIMENT / FORECAST** — I'm exploring AI-assisted tools that make difficult ideas easier to understand. The next build starts with a human problem, not a feature list.
 
@@ -42,13 +46,25 @@ I built The Celestial Archive as a calm, private place for reflection across mob
 
 <h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-capabilities.svg" alt="03 / Capabilities" /></h2>
 
-**BUILD** — Python · JavaScript · HTML · CSS · SQL · React · Node.js · Git · GitHub
+<img loading="lazy" width="1200" height="76" src="./assets/profile/tech-stack.svg" alt="Tech Stack" />
 
-**LEAD** — Society chairmanship · School and state event coordination · Debate · Chess
+<div align="center">
 
-**CREATE** — Figma · Photoshop · Premiere Pro · Final Cut Pro · Photography · Visual storytelling
+### Languages
 
-I earned a Gold Medal for an AI-based video project, but the result I value most is learning how to connect technical thinking with a story people can actually follow.
+<img loading="lazy" src="https://skillicons.dev/icons?i=python,js,html,css,mysql&theme=dark" alt="Python, JavaScript, HTML, CSS, and MySQL" />
+
+### Development
+
+<img loading="lazy" src="https://skillicons.dev/icons?i=react,nodejs,vscode,git,github&theme=dark" alt="React, Node.js, Visual Studio Code, Git, and GitHub" />
+
+### Design & Creative Tools
+
+<img loading="lazy" src="https://skillicons.dev/icons?i=figma,ps,pr&theme=dark" alt="Figma, Adobe Photoshop, and Adobe Premiere Pro" />
+
+`SQL` · `FINAL CUT PRO` · `FUJIFEED`
+
+</div>
 
 <h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-signal.svg" alt="04 / Signal" /></h2>
 
