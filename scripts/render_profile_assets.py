@@ -123,16 +123,15 @@ def hero(fonts: dict[str, TTFont]) -> str:
     grid = "".join(f'<path d="M0 {y}H1200" stroke="#00A4FF" opacity=".08"/>' for y in range(40, 401, 40))
     grid += "".join(f'<path d="M{x} 0V420" stroke="#00A4FF" opacity=".06"/>' for x in range(40, 1200, 40))
     body = (
-        '<defs><linearGradient id="horizon" x1="0" x2="1"><stop stop-color="#00E7F5"/>'
+        '<defs><linearGradient id="hero-bg" x1="0" y1="0" x2="1" y2="1">'
+        '<stop stop-color="#00A4FF"/><stop offset=".34" stop-color="#000675"/>'
+        '<stop offset=".72" stop-color="#04044A"/><stop offset="1" stop-color="#020217"/></linearGradient>'
+        '<linearGradient id="horizon" x1="0" x2="1"><stop stop-color="#00E7F5"/>'
         '<stop offset=".48" stop-color="#00A4FF"/><stop offset="1" stop-color="#000675"/></linearGradient>'
-        '<linearGradient id="hero-name-fill" x1="0" x2="1"><stop stop-color="#FFFFFF"/>'
-        '<stop offset=".5" stop-color="#00A4FF"/><stop offset="1" stop-color="#00E7F5"/></linearGradient>'
-        '<filter id="hero-name-glow" x="35" y="125" width="620" height="125" filterUnits="userSpaceOnUse">'
-        '<feGaussianBlur stdDeviation="4.5" result="blur"/><feMerge><feMergeNode in="blur"/>'
-        '<feMergeNode in="SourceGraphic"/></feMerge></filter>'
         '<radialGradient id="glow"><stop stop-color="#00E7F5" stop-opacity=".28"/>'
         '<stop offset="1" stop-color="#04044A" stop-opacity="0"/></radialGradient></defs>'
-        '<rect width="1200" height="420" rx="8" fill="#020217"/>'
+        '<rect width="1200" height="420" rx="8" fill="url(#hero-bg)"/>'
+        '<rect width="1200" height="420" rx="8" fill="#020217" opacity=".22"/>'
         '<circle cx="870" cy="192" r="320" fill="url(#glow)"/>'
         + grid
         + '<path d="M-40 354C280 182 710 125 1240 238" fill="none" stroke="url(#horizon)" stroke-width="2"/>'
@@ -149,9 +148,8 @@ def hero(fonts: dict[str, TTFont]) -> str:
             58,
             223,
             78,
-            "url(#hero-name-fill)",
-            path_attrs=' stroke="#000675" stroke-width="1.8" paint-order="stroke fill" vector-effect="non-scaling-stroke"',
-            group_attrs=' filter="url(#hero-name-glow)"',
+            "#FFFFFF",
+            path_attrs=' stroke="#04044A" stroke-width=".8" paint-order="stroke fill" vector-effect="non-scaling-stroke"',
         )
         + outlined(fonts["mono"], "INFORMATION SYSTEMS + ARTIFICIAL INTELLIGENCE", 62, 264, 18, "#00A4FF")
         + outlined(fonts["mono"], "MALAYSIA  /  SIGNAL ONLINE", 62, 337, 15, "#FFFFFF")
@@ -162,25 +160,38 @@ def hero(fonts: dict[str, TTFont]) -> str:
 
 def project(fonts: dict[str, TTFont]) -> str:
     body = (
-        '<defs><linearGradient id="projectGlow"><stop stop-color="#00E7F5" stop-opacity=".24"/>'
-        '<stop offset="1" stop-color="#04044A" stop-opacity="0"/></linearGradient></defs>'
-        '<rect width="1200" height="470" rx="8" fill="#020217"/>'
-        '<rect x="24" y="24" width="1152" height="422" fill="none" stroke="#000675"/>'
-        '<circle cx="955" cy="228" r="178" fill="url(#projectGlow)"/>'
-        '<circle cx="955" cy="228" r="116" fill="none" stroke="#00E7F5"/>'
-        '<ellipse cx="955" cy="228" rx="195" ry="70" fill="none" stroke="#00A4FF" transform="rotate(-18 955 228)"/>'
-        '<ellipse cx="955" cy="228" rx="155" ry="48" fill="none" stroke="#00A4FF" opacity=".5" transform="rotate(32 955 228)"/>'
-        '<circle cx="1121" cy="177" r="7" fill="#00E7F5"/><circle cx="803" cy="278" r="5" fill="#00A4FF"/>'
-        '<path d="M63 71H150M63 71V158M63 399H360" stroke="#00E7F5"/>'
-        + outlined(fonts["mono"], "FEATURED SYSTEM / 01", 64, 103, 16, "#00E7F5")
-        + outlined(fonts["display"], "THE CELESTIAL", 62, 196, 54, "#FFFFFF")
-        + outlined(fonts["display"], "ARCHIVE", 62, 255, 54, "#FFFFFF")
-        + outlined(fonts["mono"], "A PRIVATE SPACE FOR REFLECTION", 64, 300, 17, "#00A4FF")
-        + outlined(fonts["mono"], "78-CARD SYSTEM", 64, 360, 15, "#FFFFFF")
-        + outlined(fonts["mono"], "BILINGUAL", 246, 360, 15, "#FFFFFF")
-        + outlined(fonts["mono"], "LOCAL-FIRST", 381, 360, 15, "#FFFFFF")
-        + outlined(fonts["mono"], "MOBILE + DESKTOP", 542, 360, 15, "#FFFFFF")
-        + outlined(fonts["mono"], "CELESTIAL-ARCHIVE / LIVE", 1136, 408, 13, "#00E7F5", "end")
+        '<defs><filter id="project-paper" x="0" y="0" width="100%" height="100%">'
+        '<feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" seed="10" result="noise"/>'
+        '<feColorMatrix in="noise" type="saturate" values="0" result="grain"/>'
+        '<feBlend in="SourceGraphic" in2="grain" mode="multiply"/></filter></defs>'
+        '<rect width="1200" height="470" rx="8" fill="#F1EBDD"/>'
+        '<g filter="url(#project-paper)" opacity=".16"><rect width="1200" height="470" fill="#F1EBDD"/></g>'
+        '<path d="M0 0H282V470H0ZM282 0H510A118 118 0 0 1 628 118V470H282Z" fill="#020217"/>'
+        '<path d="M628 0H884V470H628Z" fill="#A38345"/>'
+        '<path d="M884 0H1200V470H884Z" fill="#F1EBDD"/>'
+        '<path d="M282 0H510A118 118 0 0 1 628 118V178H282Z" fill="#F1EBDD"/>'
+        '<circle cx="455" cy="245" r="116" fill="#F1EBDD"/>'
+        '<circle cx="455" cy="245" r="82" fill="#020217"/>'
+        '<path d="M392 282Q455 185 518 282M406 270Q455 208 504 270M421 259Q455 228 489 259" fill="none" stroke="#A38345" stroke-width="3"/>'
+        '<path d="M455 164V326M374 245H536" stroke="#F1EBDD" opacity=".28"/>'
+        '<path d="M628 0H884V470H628C720 392 720 78 628 0Z" fill="#04044A"/>'
+        '<path d="M834 74l11 28 28 11-28 11-11 28-11-28-28-11 28-11Z" fill="#F1EBDD"/>'
+        '<path d="M919 72V194M948 72V194M977 72V194" stroke="#A38345" opacity=".75"/>'
+        '<path d="M1062 55l8 20 20 8-20 8-8 20-8-20-20-8 20-8Z" fill="#020217"/>'
+        '<path d="M1110 91l5 13 13 5-13 5-5 13-5-13-13-5 13-5Z" fill="#A38345"/>'
+        '<path d="M64 72H184M64 400H238" stroke="#A38345" stroke-width="2"/>'
+        '<path d="M52 108h12m8 0h12m8 0h12m8 0h12m8 0h12" stroke="#F1EBDD" stroke-width="3"/>'
+        + outlined(fonts["mono"], "FEATURED / 01", 62, 58, 15, "#A38345")
+        + outlined(fonts["display"], "CELESTIAL", 60, 204, 40, "#F1EBDD")
+        + outlined(fonts["display"], "ARCHIVE", 60, 248, 40, "#F1EBDD")
+        + outlined(fonts["mono"], "PRIVATE REFLECTION SYSTEM", 61, 294, 13, "#A38345")
+        + outlined(fonts["mono"], "78 CARDS  /  BILINGUAL", 62, 355, 13, "#F1EBDD")
+        + outlined(fonts["mono"], "LOCAL-FIRST  /  MOBILE + DESKTOP", 62, 382, 13, "#F1EBDD")
+        + outlined(fonts["display"], "INNER", 926, 248, 28, "#020217")
+        + outlined(fonts["display"], "ORBIT", 926, 282, 28, "#020217")
+        + outlined(fonts["mono"], "A QUIET SPACE TO", 927, 333, 13, "#A38345")
+        + outlined(fonts["mono"], "READ BETWEEN SIGNALS", 927, 356, 13, "#A38345")
+        + outlined(fonts["mono"], "CELESTIAL-ARCHIVE / LIVE", 1146, 422, 12, "#04044A", "end")
     )
     return svg("The Celestial Archive", "Editorial poster for a bilingual, local-first, 78-card reflection experience.", 1200, 470, body)
 
