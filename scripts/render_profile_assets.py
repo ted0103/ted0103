@@ -86,19 +86,41 @@ def svg(title: str, desc: str, width: int, height: int, body: str, style: str = 
     )
 
 
-def label(fonts: dict[str, TTFont], number: str, title: str, meta: str) -> str:
+def label(fonts: dict[str, TTFont], number: str, title: str, meta: str, animated: bool = False) -> str:
+    style = """
+      .signal-reveal{animation:signal-reveal 650ms cubic-bezier(.23,1,.32,1) both;transform-box:fill-box;transform-origin:left center}
+      .signal-line{stroke-dasharray:640;animation:signal-draw 850ms cubic-bezier(.23,1,.32,1) 120ms both}
+      .signal-pulse{animation:signal-pulse 2800ms ease-in-out 900ms infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes signal-reveal{from{transform:scaleX(0)}}
+      @keyframes signal-draw{from{stroke-dashoffset:640}}
+      @keyframes signal-pulse{0%,100%{opacity:.38}50%{opacity:1}}
+      @media (prefers-reduced-motion:reduce){.signal-reveal,.signal-line,.signal-pulse{animation:none}}
+    """ if animated else ""
+    motion_defs = (
+        '<clipPath id="signal-title-clip"><rect class="signal-reveal" x="132" y="12" width="400" height="56"/></clipPath>'
+        if animated else ""
+    )
+    title_group = ' clip-path="url(#signal-title-clip)"' if animated else ""
+    motion = (
+        '<path class="signal-line" d="M560 87.5H1200" stroke="#1E90FF" stroke-width="2"/>'
+        '<circle class="signal-pulse" cx="544" cy="44" r="4" fill="#1E90FF"/>'
+        if animated else ""
+    )
     body = (
         '<defs><linearGradient id="label-bg" x1="0" y1="0" x2="1200" y2="88" gradientUnits="userSpaceOnUse">'
-        '<stop stop-color="#1E90FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs>'
+        '<stop stop-color="#1E90FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>'
+        + motion_defs
+        + '</defs>'
         '<rect width="1200" height="88" rx="2" fill="url(#label-bg)"/>'
         '<path d="M0 0H560V88H0Z" fill="#04044A"/>'
         '<path d="M0 87.5H1200" stroke="#04044A"/>'
         '<path d="M102 18V70" stroke="#FFFFFF" stroke-width="2" opacity=".72"/>'
         + outlined(fonts["mono"], number, 28, 59, 34, "#FFFFFF")
-        + outlined(fonts["display"], title, 132, 61, 42, "#FFFFFF")
+        + outlined(fonts["display"], title, 132, 61, 42, "#FFFFFF", group_attrs=title_group)
         + outlined(fonts["mono"], meta, 1168, 55, 13, "#04044A", "end")
+        + motion
     )
-    return svg(f"{number} / {title}", f"Section heading: {title}", 1200, 88, body)
+    return svg(f"{number} / {title}", f"Section heading: {title}", 1200, 88, body, style)
 
 
 def project(fonts: dict[str, TTFont]) -> str:
@@ -171,7 +193,7 @@ def render(fonts: dict[str, TTFont]) -> dict[str, str]:
         "label-profile.svg": label(fonts, "01", "PROFILE", "HUMAN / SYSTEM / PURPOSE"),
         "label-featured.svg": label(fonts, "02", "FEATURED SYSTEM", "CELESTIAL ARCHIVE"),
         "label-capabilities.svg": label(fonts, "03", "CAPABILITIES", "BUILD / LEAD / CREATE"),
-        "label-signal.svg": label(fonts, "04", "SIGNAL", "ACTIVITY / CONTACT"),
+        "label-signal.svg": label(fonts, "04", "SIGNAL", "ACTIVITY / CONTACT", animated=True),
         "celestial-archive.svg": project(fonts),
         "typing-static.svg": typing_static(fonts),
         "tech-stack.svg": tech_stack(fonts),
