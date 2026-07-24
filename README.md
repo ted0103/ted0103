@@ -1,14 +1,30 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:050816,48:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=46&fontAlignY=38&desc=BUILDING%20WITH%20CURIOSITY%20%2B%20PURPOSE&descAlignY=58&animation=fadeIn" alt="Tan Ted Hang — Building with curiosity and purpose" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://capsule-render.vercel.app/api?type=venom&height=230&color=0:050816,48:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=48&fontAlignY=48&stroke=00D9FF&strokeWidth=1" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=230&color=0:050816,48:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=48&fontAlignY=48&stroke=00D9FF&strokeWidth=1&animation=fadeIn" alt="Tan Ted Hang" />
+</picture>
 
-<img width="142" src="https://avatars.githubusercontent.com/u/219102225?v=4&s=284" alt="Portrait of Tan Ted Hang" />
+<a href="https://git.io/typing-svg">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://capsule-render.vercel.app/api?type=transparent&height=45&text=INFORMATION%20SYSTEMS%20%2B%20AI%20%E2%80%A2%20CREATIVE%20TECHNOLOGIST&fontColor=00D9FF&fontSize=18&fontAlignY=50" />
+    <img width="750" height="45" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=900&color=00D9FF&center=true&vCenter=true&width=750&lines=Information+Systems+%26+AI+Enthusiast;Independent+Developer+%7C+Creative+Technologist;Building+Products+That+Solve+Real+Problems;Leadership+%E2%80%A2+Technology+%E2%80%A2+Photography" alt="Animated introduction: Information Systems and AI enthusiast, independent developer, creative technologist, and leader" />
+  </picture>
+</a>
 
-### Information Systems & AI Student · Society Chairperson · Creative Technologist
+<br/>
+
+`MALAYSIA` · `INFORMATION SYSTEMS + AI` · `SOCIETY CHAIRPERSON`
+
+<br/>
 
 [![Email](https://img.shields.io/badge/EMAIL-SAY_HELLO-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tedhangtan@gmail.com)
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-%40__HWALKER__1-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_hwalker_1/)
 [![GitHub](https://img.shields.io/badge/GITHUB-TED0103-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103)
+
+<br/><br/>
+
+<img width="100%" height="8" src="https://capsule-render.vercel.app/api?type=rect&height=8&color=0:050816,50:7C4DFF,100:00D9FF" alt="" />
 
 </div>
 
@@ -53,7 +69,7 @@ I built The Celestial Archive as a calm, private space for reflection across mob
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,js,html,css,react,nodejs,git,github,figma,ps,pr&theme=dark&perline=11" alt="Python, JavaScript, HTML, CSS, React, Node.js, Git, GitHub, Figma, Photoshop, and Premiere Pro" />
+<img loading="lazy" src="https://skillicons.dev/icons?i=python,js,html,css,react,nodejs,git,github,figma,ps,pr&theme=dark&perline=11" alt="Python, JavaScript, HTML, CSS, React, Node.js, Git, GitHub, Figma, Photoshop, and Premiere Pro" />
 
 <br/><br/>
 
@@ -77,15 +93,16 @@ Technology is only one side of how I work. I've earned a Gold Medal for an AI-ba
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-static.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-animate.svg" alt="Ted's 3D GitHub contribution skyline" />
+  <img loading="lazy" width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-animate.svg" alt="Ted's 3D GitHub contribution skyline" />
 </picture>
 
 <br/>
 
 <picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://img.shields.io/badge/CONTRIBUTION_ACTIVITY-ANIMATION_PAUSED-111C44?style=for-the-badge&logo=github&logoColor=00D9FF" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake.svg" alt="Animated contribution snake crossing Ted's GitHub activity grid" />
+  <img loading="lazy" width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake.svg" alt="Animated contribution snake crossing Ted's GitHub activity grid" />
 </picture>
 
 </div>
@@ -99,6 +116,6 @@ Technology is only one side of how I work. I've earned a Gold Medal for an AI-ba
 [![Email Ted](https://img.shields.io/badge/EMAIL_TED-00D9FF?style=for-the-badge&logo=gmail&logoColor=050816)](mailto:tedhangtan@gmail.com)
 [![View Celestial Archive](https://img.shields.io/badge/CELESTIAL_ARCHIVE-7C4DFF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103/celestial-archive)
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:00D9FF,50:111C44,100:050816" alt="" />
+<img loading="lazy" width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=120&section=footer&color=0:00D9FF,50:111C44,100:050816" alt="" />
 
 </div>
