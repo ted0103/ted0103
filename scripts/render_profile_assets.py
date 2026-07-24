@@ -123,6 +123,109 @@ def label(fonts: dict[str, TTFont], number: str, title: str, meta: str, animated
     return svg(f"{number} / {title}", f"Section heading: {title}", 1200, 88, body, style)
 
 
+def glass_label(fonts: dict[str, TTFont], number: str, title: str, meta: str, animated: bool = False) -> str:
+    style = """
+      .signal-line{stroke-dasharray:720;animation:signal-draw 900ms cubic-bezier(.23,1,.32,1) both}
+      .signal-pulse{animation:signal-pulse 2800ms ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes signal-draw{from{stroke-dashoffset:720}}
+      @keyframes signal-pulse{50%{opacity:.35;transform:scale(.78)}}
+      @media (prefers-reduced-motion:reduce){.signal-line,.signal-pulse{animation:none}}
+    """ if animated else ""
+    motion = (
+        '<path class="signal-line" d="M650 96H1160" stroke="#67E7FF" stroke-width="1.5" opacity=".65"/>'
+        '<circle class="signal-pulse" cx="630" cy="44" r="4" fill="#67E7FF"/>'
+        if animated else ""
+    )
+    body = (
+        '<defs>'
+        '<linearGradient id="glass-bg" x1="0" y1="0" x2="1200" y2="120" gradientUnits="userSpaceOnUse">'
+        '<stop stop-color="#12345B"/><stop offset=".48" stop-color="#071A39"/><stop offset="1" stop-color="#030A1C"/>'
+        '</linearGradient>'
+        '<linearGradient id="edge" x1="0" x2="1"><stop stop-color="#67E7FF" stop-opacity=".65"/><stop offset="1" stop-color="#168DFF" stop-opacity=".08"/></linearGradient>'
+        '</defs>'
+        '<rect x="1" y="1" width="1198" height="118" rx="22" fill="url(#glass-bg)" stroke="#FFFFFF" stroke-opacity=".16"/>'
+        '<path d="M22 1H1178" stroke="url(#edge)" stroke-width="2" opacity=".65"/>'
+        '<circle cx="54" cy="42" r="18" fill="#67E7FF" fill-opacity=".12" stroke="#67E7FF" stroke-opacity=".36"/>'
+        + outlined(fonts["mono"], number, 54, 49, 14, "#67E7FF", "middle")
+        + outlined(fonts["mono"], f"{number} / {title}", 92, 46, 14, "#67E7FF")
+        + outlined(fonts["display"], meta, 92, 91, 30, "#F5F9FF")
+        + motion
+    )
+    return svg(f"{number} / {title}", f"Section heading: {meta}", 1200, 120, body, style)
+
+
+def hero_glass(fonts: dict[str, TTFont]) -> str:
+    style = """
+      .ambient{animation:ambient 8s cubic-bezier(.77,0,.175,1) infinite;transform-box:fill-box;transform-origin:center}
+      .status{animation:status 2600ms ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes ambient{50%{opacity:.74;transform:scale(1.08)}}
+      @keyframes status{50%{opacity:.38;transform:scale(.8)}}
+      @media (prefers-reduced-motion:reduce){.ambient,.status{animation:none}}
+    """
+    chips = [
+        (72, 405, 250, "INFORMATION SYSTEMS + AI"),
+        (336, 405, 238, "INDEPENDENT DEVELOPER"),
+        (588, 405, 244, "CREATIVE TECHNOLOGIST"),
+    ]
+    chip_body = ""
+    for x, y, width, text in chips:
+        chip_body += f'<rect x="{x}" y="{y}" width="{width}" height="44" rx="22" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".14"/>'
+        chip_body += outlined(fonts["mono"], text, x + width / 2, y + 28, 12, "#D6E3F5", "middle")
+    body = (
+        '<defs>'
+        '<linearGradient id="hero-bg" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse">'
+        '<stop stop-color="#17436B"/><stop offset=".36" stop-color="#0A2349"/><stop offset=".68" stop-color="#061631"/><stop offset="1" stop-color="#020817"/>'
+        '</linearGradient>'
+        '<linearGradient id="name-fill" x1="80" x2="900"><stop stop-color="#FFFFFF"/><stop offset=".58" stop-color="#D5F6FF"/><stop offset="1" stop-color="#41C7FF"/></linearGradient>'
+        '<radialGradient id="hero-glow"><stop stop-color="#67E7FF" stop-opacity=".55"/><stop offset=".46" stop-color="#168DFF" stop-opacity=".12"/><stop offset="1" stop-color="#168DFF" stop-opacity="0"/></radialGradient>'
+        '<filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>'
+        '</defs>'
+        '<rect x="1" y="1" width="1198" height="498" rx="32" fill="url(#hero-bg)" stroke="#FFFFFF" stroke-opacity=".18"/>'
+        '<path d="M34 1H1166" stroke="#91EDFF" stroke-opacity=".38" stroke-width="2"/>'
+        '<circle class="ambient" cx="1000" cy="70" r="230" fill="url(#hero-glow)" filter="url(#blur)"/>'
+        + outlined(fonts["mono"], "PORTFOLIO SIGNAL  /  2026", 72, 70, 14, "#67E7FF")
+        + outlined(fonts["display"], "TAN TED HANG", 72, 247, 86, "url(#name-fill)")
+        + outlined(fonts["display"], "Building technology with purpose, curiosity,", 74, 302, 25, "#D7E3F4")
+        + outlined(fonts["display"], "and a human point of view.", 74, 338, 25, "#D7E3F4")
+        + chip_body
+        + '<circle class="status" cx="940" cy="426" r="5" fill="#67E7FF"/>'
+        + outlined(fonts["mono"], "OPEN TO MEANINGFUL COLLABORATIONS", 958, 431, 11, "#A7B7D0")
+    )
+    return svg("Tan Ted Hang", "Building technology with purpose, curiosity, and a human point of view.", 1200, 500, body, style)
+
+
+def projects_glass(fonts: dict[str, TTFont]) -> str:
+    body = (
+        '<defs>'
+        '<linearGradient id="card-a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1EBDD"/><stop offset=".47" stop-color="#F1EBDD"/><stop offset=".48" stop-color="#08082D"/><stop offset="1" stop-color="#171069"/></linearGradient>'
+        '<linearGradient id="card-b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#09234A"/><stop offset=".55" stop-color="#06152F"/><stop offset="1" stop-color="#0B79C8"/></linearGradient>'
+        '</defs>'
+        '<rect width="1200" height="520" fill="#020611"/>'
+        '<rect x="18" y="18" width="570" height="484" rx="24" fill="#07162F" stroke="#FFFFFF" stroke-opacity=".16"/>'
+        '<rect x="612" y="18" width="570" height="484" rx="24" fill="#07162F" stroke="#FFFFFF" stroke-opacity=".16"/>'
+        '<path d="M18 42A24 24 0 0 1 42 18H564A24 24 0 0 1 588 42V294H18Z" fill="url(#card-a)"/>'
+        '<path d="M612 42A24 24 0 0 1 636 18H1158A24 24 0 0 1 1182 42V294H612Z" fill="url(#card-b)"/>'
+        '<circle cx="303" cy="157" r="93" fill="none" stroke="#FFFFFF" stroke-opacity=".24"/>'
+        '<circle cx="303" cy="157" r="58" fill="none" stroke="#FFFFFF" stroke-opacity=".3"/>'
+        '<rect x="258" y="112" width="90" height="90" rx="27" fill="#030A1C" fill-opacity=".88" stroke="#FFFFFF" stroke-opacity=".2" transform="rotate(-8 303 157)"/>'
+        '<path d="M303 132l7 18 18 7-18 7-7 18-7-18-18-7 18-7Z" fill="#FFFFFF"/>'
+        '<path d="M662 18V294M712 18V294M762 18V294M812 18V294M862 18V294M912 18V294M962 18V294M1012 18V294M1062 18V294M1112 18V294M612 68H1182M612 118H1182M612 168H1182M612 218H1182M612 268H1182" stroke="#FFFFFF" stroke-opacity=".07"/>'
+        '<circle cx="897" cy="157" r="93" fill="none" stroke="#FFFFFF" stroke-opacity=".22"/>'
+        '<circle cx="897" cy="157" r="58" fill="none" stroke="#FFFFFF" stroke-opacity=".28"/>'
+        '<rect x="852" y="112" width="90" height="90" rx="27" fill="#030A1C" fill-opacity=".72" stroke="#FFFFFF" stroke-opacity=".2" transform="rotate(-8 897 157)"/>'
+        + outlined(fonts["display"], "T", 897, 177, 44, "#FFFFFF", "middle")
+        + outlined(fonts["mono"], "FLAGSHIP SYSTEM", 48, 333, 12, "#67E7FF")
+        + outlined(fonts["display"], "CELESTIAL ARCHIVE", 48, 383, 33, "#F5F9FF")
+        + outlined(fonts["display"], "Bilingual / local-first / 78 cards", 48, 420, 17, "#A7B7D0")
+        + outlined(fonts["mono"], "LIVE  /  HTML  /  2026", 48, 465, 11, "#7085A7")
+        + outlined(fonts["mono"], "DIGITAL IDENTITY", 642, 333, 12, "#67E7FF")
+        + outlined(fonts["display"], "TED'S PERSONAL PORTFOLIO", 642, 383, 31, "#F5F9FF")
+        + outlined(fonts["display"], "Liquid glass / Astro / GitHub powered", 642, 420, 17, "#A7B7D0")
+        + outlined(fonts["mono"], "CURRENT  /  ASTRO  /  2026", 642, 465, 11, "#7085A7")
+    )
+    return svg("Selected projects", "Celestial Archive and Ted's Personal Portfolio.", 1200, 520, body)
+
+
 def project(fonts: dict[str, TTFont]) -> str:
     body = (
         '<defs><filter id="project-paper" x="0" y="0" width="100%" height="100%">'
@@ -190,10 +293,12 @@ def tech_stack(fonts: dict[str, TTFont]) -> str:
 
 def render(fonts: dict[str, TTFont]) -> dict[str, str]:
     return {
-        "label-profile.svg": label(fonts, "01", "PROFILE", "HUMAN / SYSTEM / PURPOSE"),
-        "label-featured.svg": label(fonts, "02", "FEATURED SYSTEM", "CELESTIAL ARCHIVE"),
-        "label-capabilities.svg": label(fonts, "03", "CAPABILITIES", "BUILD / LEAD / CREATE"),
-        "label-signal.svg": label(fonts, "04", "SIGNAL", "ACTIVITY / CONTACT", animated=True),
+        "hero-glass.svg": hero_glass(fonts),
+        "label-profile.svg": glass_label(fonts, "01", "PROFILE", "THE HUMAN LAYER"),
+        "label-featured.svg": glass_label(fonts, "02", "PROJECTS", "SELECTED SYSTEMS"),
+        "label-capabilities.svg": glass_label(fonts, "03", "CAPABILITIES", "TOOLS CHOSEN FOR THE IDEA"),
+        "label-signal.svg": glass_label(fonts, "04", "SIGNAL", "CONSISTENT MOTION / QUIET MOMENTUM", animated=True),
+        "projects-glass.svg": projects_glass(fonts),
         "celestial-archive.svg": project(fonts),
         "typing-static.svg": typing_static(fonts),
         "tech-stack.svg": tech_stack(fonts),
