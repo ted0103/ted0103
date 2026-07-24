@@ -1,0 +1,24 @@
+[
+  {
+    "type": "normal",
+    "fileName": "profile-cosmic-animate.svg",
+    "backgroundColor": "#050816",
+    "foregroundColor": "#C9D1D9",
+    "strongColor": "#00D9FF",
+    "weakColor": "#475569",
+    "radarColor": "#7C4DFF",
+    "growingAnimation": true,
+    "contribColors": ["#0B1026", "#14255A", "#254A8A", "#4F46E5", "#00D9FF"]
+  },
+  {
+    "type": "normal",
+    "fileName": "profile-cosmic-static.svg",
+    "backgroundColor": "#050816",
+    "foregroundColor": "#C9D1D9",
+    "strongColor": "#00D9FF",
+    "weakColor": "#475569",
+    "radarColor": "#7C4DFF",
+    "growingAnimation": false,
+    "contribColors": ["#0B1026", "#14255A", "#254A8A", "#4F46E5", "#00D9FF"]
+  }
+]

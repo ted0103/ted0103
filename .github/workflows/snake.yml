@@ -1,39 +1,81 @@
-name: Generate Contribution Snake
+name: Generate profile visuals
 
 on:
-  # Run automatically every 12 hours
   schedule:
-    - cron: "0 */12 * * *"
-
-  # Allow manual runs from the Actions tab
+    - cron: "0 17 * * *"
   workflow_dispatch:
 
-  # Run whenever the main branch is updated
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: write
+concurrency:
+  group: profile-visuals-${{ github.repository }}
+  cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: read
 
     steps:
-      - name: Generate snake animation
-        uses: Platane/snk/svg-only@v3
+      - name: Check out profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Generate contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Publish animation
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          build_dir: dist
-          branch: output
+      - name: Generate 3D contribution skyline
+        uses: yoshi389111/github-profile-3d-contrib@c71a48f73bf45079b797bb504020fb05808529b4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/profile-3d.json
+
+      - name: Collect skyline assets
+        run: |
+          cp profile-3d-contrib/profile-cosmic-animate.svg dist/
+          cp profile-3d-contrib/profile-cosmic-static.svg dist/
+
+      - name: Upload generated visuals
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: profile-visuals
+          path: dist
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out generated-asset branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: gh-pages
+          path: published
+
+      - name: Download generated visuals
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+        with:
+          name: profile-visuals
+          path: published
+
+      - name: Publish visuals
+        working-directory: published
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-snake.svg github-snake-dark.svg profile-cosmic-animate.svg profile-cosmic-static.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update profile visuals"
+          git push
