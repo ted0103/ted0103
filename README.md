@@ -1,121 +1,66 @@
 <div align="center">
 
+<h1><img width="1200" height="420" src="./assets/profile/hero-signal.svg" alt="Tan Ted Hang — Information Systems and AI student in Malaysia" /></h1>
+
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://capsule-render.vercel.app/api?type=venom&height=230&color=0:050816,48:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=48&fontAlignY=48&stroke=00D9FF&strokeWidth=1" />
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=230&color=0:050816,48:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=48&fontAlignY=48&stroke=00D9FF&strokeWidth=1&animation=fadeIn" alt="Tan Ted Hang" />
+  <source media="(prefers-reduced-motion: no-preference)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=00E7F5&center=true&vCenter=true&width=1000&height=64&lines=Information+Systems+%2B+Artificial+Intelligence;Creative+Technologist+%2B+Visual+Storyteller;Building+Human-Centered+Systems" />
+  <img width="100%" src="./assets/profile/typing-static.svg" alt="Information Systems and Artificial Intelligence; Creative Technologist and Visual Storyteller; Building Human-Centered Systems" />
 </picture>
 
-<a href="https://git.io/typing-svg">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://capsule-render.vercel.app/api?type=transparent&height=45&text=INFORMATION%20SYSTEMS%20%2B%20AI%20%E2%80%A2%20CREATIVE%20TECHNOLOGIST&fontColor=00D9FF&fontSize=18&fontAlignY=50" />
-    <img width="750" height="45" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=900&color=00D9FF&center=true&vCenter=true&width=750&lines=Information+Systems+%26+AI+Enthusiast;Independent+Developer+%7C+Creative+Technologist;Building+Products+That+Solve+Real+Problems;Leadership+%E2%80%A2+Technology+%E2%80%A2+Photography" alt="Animated introduction: Information Systems and AI enthusiast, independent developer, creative technologist, and leader" />
-  </picture>
-</a>
-
-<br/>
-
-`MALAYSIA` · `INFORMATION SYSTEMS + AI` · `SOCIETY CHAIRPERSON`
-
-<br/>
-
-[![Email](https://img.shields.io/badge/EMAIL-SAY_HELLO-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tedhangtan@gmail.com)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-%40__HWALKER__1-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_hwalker_1/)
 [![GitHub](https://img.shields.io/badge/GITHUB-TED0103-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103)
-
-<br/><br/>
-
-<img width="100%" height="8" src="https://capsule-render.vercel.app/api?type=rect&height=8&color=0:050816,50:7C4DFF,100:00D9FF" alt="" />
+[![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tedhangtan@gmail.com)
+[![Instagram](https://img.shields.io/badge/INSTAGRAM-%40__HWALKER__1-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_hwalker_1/)
 
 </div>
 
----
+<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-profile.svg" alt="01 / Profile" /></h2>
 
-## `01 // HELLO`
+I'm Ted, an Information Systems and AI student in Malaysia. I build at the point where technology, design, and people meet—turning complex ideas into systems that feel clear, useful, and human.
 
-I'm Ted, an Information Systems and AI student in Malaysia who enjoys building where technology, design, and people meet. I care about making complex ideas feel clear and useful—whether I'm shaping a product, leading a team, or telling a story through visuals.
+As a Society Chairperson, I've learned that direction matters, but people matter more. I bring that into every project: listen closely, make the goal visible, and help the team move together.
 
-As a Society Chairperson, I've learned that good ideas only move when people feel heard and the team knows where it is going. That same belief shapes how I approach technology: understand the human need first, then build with purpose.
+> **NEXT EXPERIMENT / FORECAST** — I'm exploring AI-assisted tools that make difficult ideas easier to understand. The next build starts with a human problem, not a feature list.
 
----
+<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-featured.svg" alt="02 / Featured System" /></h2>
 
-## `02 // FEATURED BUILD`
+<div align="center">
+  <img loading="lazy" width="1200" height="470" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive — a bilingual, local-first, 78-card reflection experience" />
+</div>
+
+### The Celestial Archive · 天穹秘典
+
+I built The Celestial Archive as a calm, private place for reflection across mobile and desktop. Its complete 78-card system supports a bilingual experience, while readings stay on the user's device unless they choose otherwise.
 
 <div align="center">
 
-### ✦ The Celestial Archive · 天穹秘典
+`78 CARDS` · `BILINGUAL` · `LOCAL-FIRST` · `MOBILE + DESKTOP`
 
-**A bilingual, local-first 78-card tarot reflection experience**
-
-</div>
-
-I built The Celestial Archive as a calm, private space for reflection across mobile and desktop. Its complete 78-card collection works in a bilingual interface, while readings stay on the user's device unless they choose to save or share them.
-
-<div align="center">
-
-`78 cards` · `Bilingual` · `Local-first` · `Mobile + desktop`
-
-[![Explore repository](https://img.shields.io/badge/EXPLORE_REPOSITORY-00D9FF?style=for-the-badge&logo=github&logoColor=050816)](https://github.com/ted0103/celestial-archive)
-[![Open live experience](https://img.shields.io/badge/OPEN_LIVE_EXPERIENCE-7C4DFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ted0103.github.io/celestial-archive/)
+[![Source](https://img.shields.io/badge/SOURCE-GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103/celestial-archive)
+[![Live](https://img.shields.io/badge/OPEN-LIVE_SYSTEM-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ted0103.github.io/celestial-archive/)
 
 </div>
 
-### `NEXT SIGNAL`
+<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-capabilities.svg" alt="03 / Capabilities" /></h2>
 
-> I'm exploring AI-assisted, human-centered tools that turn complex ideas into clear, useful experiences. The next experiment starts there.
+**BUILD** — Python · JavaScript · HTML · CSS · SQL · React · Node.js · Git · GitHub
 
----
+**LEAD** — Society chairmanship · School and state event coordination · Debate · Chess
 
-## `03 // TOOLKIT`
+**CREATE** — Figma · Photoshop · Premiere Pro · Final Cut Pro · Photography · Visual storytelling
 
-<div align="center">
+I earned a Gold Medal for an AI-based video project, but the result I value most is learning how to connect technical thinking with a story people can actually follow.
 
-<img loading="lazy" src="https://skillicons.dev/icons?i=python,js,html,css,react,nodejs,git,github,figma,ps,pr&theme=dark&perline=11" alt="Python, JavaScript, HTML, CSS, React, Node.js, Git, GitHub, Figma, Photoshop, and Premiere Pro" />
-
-<br/><br/>
-
-`SQL` · `Final Cut Pro`
-
-</div>
-
-I use code to make ideas work and creative tools to make them understood. The toolkit changes as I learn; the goal stays the same—choose what helps the idea communicate clearly.
-
----
-
-## `04 // BEYOND CODE`
-
-Technology is only one side of how I work. I've earned a Gold Medal for an AI-based video project, coordinated events at school and state levels, and grown through debate and chess. Those experiences taught me to think ahead, communicate under pressure, and keep a team moving without losing the people inside it.
-
----
-
-## `05 // ACTIVITY SIGNAL`
+<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-signal.svg" alt="04 / Signal" /></h2>
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-static.svg" />
-  <img loading="lazy" width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-animate.svg" alt="Ted's 3D GitHub contribution skyline" />
+  <source media="(prefers-reduced-motion: no-preference)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-animate.svg" />
+  <img loading="lazy" width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-static.svg" alt="Ted's 3D GitHub contribution skyline" />
 </picture>
 
-<br/>
+### Have an idea worth making clear?
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://img.shields.io/badge/CONTRIBUTION_ACTIVITY-ANIMATION_PAUSED-111C44?style=for-the-badge&logo=github&logoColor=00D9FF" />
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake.svg" />
-  <img loading="lazy" width="100%" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/github-snake.svg" alt="Animated contribution snake crossing Ted's GitHub activity grid" />
-</picture>
-
-</div>
-
----
-
-<div align="center">
-
-### Let's build something that makes a difference.
-
-[![Email Ted](https://img.shields.io/badge/EMAIL_TED-00D9FF?style=for-the-badge&logo=gmail&logoColor=050816)](mailto:tedhangtan@gmail.com)
-[![View Celestial Archive](https://img.shields.io/badge/CELESTIAL_ARCHIVE-7C4DFF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103/celestial-archive)
-
-<img loading="lazy" width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=120&section=footer&color=0:00D9FF,50:111C44,100:050816" alt="" />
+[![Email Ted](https://img.shields.io/badge/START_A_CONVERSATION-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tedhangtan@gmail.com)
 
 </div>
