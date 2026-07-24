@@ -4,7 +4,7 @@
 
 <picture>
   <source media="(prefers-reduced-motion: no-preference)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=00E7F5&center=true&vCenter=true&width=1000&height=64&lines=Information+Systems+%2B+Artificial+Intelligence;Creative+Technologist+%2B+Visual+Storyteller;Building+Human-Centered+Systems" />
-  <img width="1000" height="64" src="./assets/profile/typing-static.svg" alt="Information Systems and Artificial Intelligence; Creative Technologist and Visual Storyteller; Building Human-Centered Systems" />
+  <img width="100%" src="./assets/profile/typing-static.svg" alt="Information Systems and Artificial Intelligence; Creative Technologist and Visual Storyteller; Building Human-Centered Systems" />
 </picture>
 
 [![GitHub](https://img.shields.io/badge/GITHUB-TED0103-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103)
