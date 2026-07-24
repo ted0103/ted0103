@@ -1,52 +1,46 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050816,45:111C44,100:00D9FF&text=TAN%20TED%20HANG&fontColor=FFFFFF&fontSize=48&fontAlignY=38&desc=Building%20Technology%20with%20Purpose&descAlignY=59&animation=fadeIn" alt="Tan Ted Hang — Building Technology with Purpose" />
+<img width="100%" src="./assets/profile/hero-glass.svg" alt="Tan Ted Hang — building technology with purpose, curiosity, and a human point of view" />
 
-<picture>
-  <source media="(prefers-reduced-motion: no-preference)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=00E7F5&center=true&vCenter=true&width=1000&height=64&lines=Information+Systems+%2B+Artificial+Intelligence;Creative+Technologist+%2B+Visual+Storyteller;Building+Human-Centered+Systems" />
-  <img width="100%" src="./assets/profile/typing-static.svg" alt="Information Systems and Artificial Intelligence; Creative Technologist and Visual Storyteller; Building Human-Centered Systems" />
-</picture>
-
+[![Portfolio](https://img.shields.io/badge/VIEW_PORTFOLIO-OPEN_SITE-00D9FF?style=for-the-badge&logo=safari&logoColor=04142D)](https://ted0103.github.io/)
 [![GitHub](https://img.shields.io/badge/GITHUB-TED0103-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103)
 [![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tedhangtan@gmail.com)
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-%40__HWALKER__1-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_hwalker_1/)
 
 </div>
 
-<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-profile.svg" alt="01 / Profile" /></h2>
+<h2><img loading="lazy" width="1200" height="120" src="./assets/profile/label-profile.svg" alt="01 / Profile — The Human Layer" /></h2>
 
-I'm Ted, an Information Systems and AI student in Malaysia. I build at the point where technology, design, and people meet—turning complex ideas into systems that feel clear, useful, and human.
+I’m Ted, an Information Systems and AI student in Malaysia. I build where technology, design, and people meet—turning complex ideas into systems that feel clear, useful, and human.
 
-Through chairing a society, I've learned that direction matters, but people matter more. I bring that into every project: listen closely, make the goal visible, and help the team move together.
+Chairing a society taught me that direction matters, but people matter more. I bring that into every project: listen closely, make the goal visible, and help the team move together.
 
 **SELECTED SIGNALS** — Gold Medal, AI Video Project · Society Chairperson · School + State Event Coordination · Debate + Chess
 
-The result I value most is learning how to connect technical thinking with a story people can actually follow.
+> **NEXT EXPERIMENT / FORECAST** — I’m exploring AI-assisted tools that make difficult ideas easier to understand. The next build starts with a human problem, not a feature list.
 
-> **NEXT EXPERIMENT / FORECAST** — I'm exploring AI-assisted tools that make difficult ideas easier to understand. The next build starts with a human problem, not a feature list.
-
-<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-featured.svg" alt="02 / Featured System" /></h2>
-
-<div align="center">
-  <img loading="lazy" width="1200" height="470" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive — a bilingual, local-first, 78-card reflection experience" />
-</div>
-
-### The Celestial Archive · 天穹秘典
-
-I built The Celestial Archive as a calm, private place for reflection across mobile and desktop. Its complete 78-card system supports a bilingual experience, while readings stay on the user's device unless they choose otherwise.
+<h2><img loading="lazy" width="1200" height="120" src="./assets/profile/label-featured.svg" alt="02 / Projects — Selected Systems" /></h2>
 
 <div align="center">
 
-`78 CARDS` · `BILINGUAL` · `LOCAL-FIRST` · `MOBILE + DESKTOP`
+<img loading="lazy" width="1200" height="520" src="./assets/profile/projects-glass.svg" alt="Selected projects: Celestial Archive and Ted's Personal Portfolio" />
 
-[![Source](https://img.shields.io/badge/SOURCE-GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103/celestial-archive)
-[![Live](https://img.shields.io/badge/OPEN-LIVE_SYSTEM-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ted0103.github.io/celestial-archive/)
+### Celestial Archive · 天穹秘典
+
+A bilingual, local-first 78-card reflection experience designed as a calm and private space across mobile and desktop.
+
+[![Open Celestial Archive](https://img.shields.io/badge/OPEN_LIVE_SYSTEM-8177FF?style=for-the-badge&logo=safari&logoColor=white)](https://ted0103.github.io/celestial-archive/)
+[![Source](https://img.shields.io/badge/VIEW_SOURCE-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ted0103/celestial-archive)
+
+### Ted’s Personal Portfolio
+
+A fast, accessible multi-page portfolio with a restrained liquid-glass system and a curated GitHub-powered project architecture.
+
+[![Explore Portfolio](https://img.shields.io/badge/EXPLORE_PORTFOLIO-00D9FF?style=for-the-badge&logo=safari&logoColor=04142D)](https://ted0103.github.io/)
 
 </div>
 
-<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-capabilities.svg" alt="03 / Capabilities" /></h2>
-
-<img loading="lazy" width="1200" height="76" src="./assets/profile/tech-stack.svg" alt="Tech Stack" />
+<h2><img loading="lazy" width="1200" height="120" src="./assets/profile/label-capabilities.svg" alt="03 / Capabilities — Tools Chosen for the Idea" /></h2>
 
 <div align="center">
 
@@ -66,7 +60,7 @@ I built The Celestial Archive as a calm, private place for reflection across mob
 
 </div>
 
-<h2><img loading="lazy" width="1200" height="88" src="./assets/profile/label-signal.svg" alt="04 / Signal" /></h2>
+<h2><img loading="lazy" width="1200" height="120" src="./assets/profile/label-signal.svg" alt="04 / Signal — Consistent Motion, Quiet Momentum" /></h2>
 
 <div align="center">
 
@@ -77,6 +71,7 @@ I built The Celestial Archive as a calm, private place for reflection across mob
 
 ### Have an idea worth making clear?
 
+[![View Portfolio](https://img.shields.io/badge/VIEW_PORTFOLIO-00D9FF?style=for-the-badge&logo=safari&logoColor=04142D)](https://ted0103.github.io/)
 [![Email Ted](https://img.shields.io/badge/START_A_CONVERSATION-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tedhangtan@gmail.com)
 
 </div>
