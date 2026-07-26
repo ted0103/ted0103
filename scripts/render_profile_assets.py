@@ -155,17 +155,10 @@ def glass_label(fonts: dict[str, TTFont], number: str, title: str, meta: str, an
 
 
 def hero_glass(fonts: dict[str, TTFont]) -> str:
-    style = """
-      .ambient{animation:ambient 8s cubic-bezier(.77,0,.175,1) infinite;transform-box:fill-box;transform-origin:center}
-      .status{animation:status 2600ms ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-      @keyframes ambient{50%{opacity:.74;transform:scale(1.08)}}
-      @keyframes status{50%{opacity:.38;transform:scale(.8)}}
-      @media (prefers-reduced-motion:reduce){.ambient,.status{animation:none}}
-    """
     chips = [
-        (72, 405, 250, "INFORMATION SYSTEMS + AI"),
-        (336, 405, 238, "INDEPENDENT DEVELOPER"),
-        (588, 405, 244, "CREATIVE TECHNOLOGIST"),
+        (72, 337, 250, "INFORMATION SYSTEMS + AI"),
+        (336, 337, 238, "INDEPENDENT DEVELOPER"),
+        (588, 337, 244, "CREATIVE TECHNOLOGIST"),
     ]
     chip_body = ""
     for x, y, width, text in chips:
@@ -173,25 +166,24 @@ def hero_glass(fonts: dict[str, TTFont]) -> str:
         chip_body += outlined(fonts["mono"], text, x + width / 2, y + 28, 12, "#D6E3F5", "middle")
     body = (
         '<defs>'
-        '<linearGradient id="hero-bg" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse">'
-        '<stop stop-color="#17436B"/><stop offset=".36" stop-color="#0A2349"/><stop offset=".68" stop-color="#061631"/><stop offset="1" stop-color="#020817"/>'
+        '<linearGradient id="hero-bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">'
+        '<stop stop-color="#10294B"/><stop offset=".42" stop-color="#071A39"/><stop offset="1" stop-color="#030713"/>'
         '</linearGradient>'
-        '<linearGradient id="name-fill" x1="80" x2="900"><stop stop-color="#FFFFFF"/><stop offset=".58" stop-color="#D5F6FF"/><stop offset="1" stop-color="#41C7FF"/></linearGradient>'
-        '<radialGradient id="hero-glow"><stop stop-color="#67E7FF" stop-opacity=".55"/><stop offset=".46" stop-color="#168DFF" stop-opacity=".12"/><stop offset="1" stop-color="#168DFF" stop-opacity="0"/></radialGradient>'
-        '<filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>'
+        '<linearGradient id="name-fill" x1="80" x2="900"><stop stop-color="#F8F6EE"/><stop offset=".64" stop-color="#E3F1FF"/><stop offset="1" stop-color="#8BC5EE"/></linearGradient>'
+        '<radialGradient id="hero-glow"><stop stop-color="#9FD8FF" stop-opacity=".28"/><stop offset="1" stop-color="#168DFF" stop-opacity="0"/></radialGradient>'
+        '<filter id="blur"><feGaussianBlur stdDeviation="34"/></filter>'
         '</defs>'
-        '<rect x="1" y="1" width="1198" height="498" rx="32" fill="url(#hero-bg)" stroke="#FFFFFF" stroke-opacity=".18"/>'
-        '<path d="M34 1H1166" stroke="#91EDFF" stroke-opacity=".38" stroke-width="2"/>'
-        '<circle class="ambient" cx="1000" cy="70" r="230" fill="url(#hero-glow)" filter="url(#blur)"/>'
-        + outlined(fonts["mono"], "PORTFOLIO SIGNAL  /  2026", 72, 70, 14, "#67E7FF")
-        + outlined(fonts["display"], "TAN TED HANG", 72, 247, 86, "url(#name-fill)")
-        + outlined(fonts["display"], "Building technology with purpose, curiosity,", 74, 302, 25, "#D7E3F4")
-        + outlined(fonts["display"], "and a human point of view.", 74, 338, 25, "#D7E3F4")
+        '<rect x="1" y="1" width="1198" height="418" rx="28" fill="url(#hero-bg)" stroke="#FFFFFF" stroke-opacity=".16"/>'
+        '<path d="M30 1H1170" stroke="#D9F0FF" stroke-opacity=".3"/>'
+        '<circle cx="1040" cy="32" r="250" fill="url(#hero-glow)" filter="url(#blur)"/>'
+        + outlined(fonts["mono"], "PORTFOLIO  /  MALAYSIA", 72, 64, 13, "#9FD8FF")
+        + outlined(fonts["display"], "TAN TED HANG", 72, 211, 82, "url(#name-fill)")
+        + outlined(fonts["display"], "Technology with a human point of view.", 74, 267, 25, "#D7E3F4")
         + chip_body
-        + '<circle class="status" cx="940" cy="426" r="5" fill="#67E7FF"/>'
-        + outlined(fonts["mono"], "OPEN TO MEANINGFUL COLLABORATIONS", 958, 431, 11, "#A7B7D0")
+        + '<circle cx="938" cy="360" r="4" fill="#D4B06A"/>'
+        + outlined(fonts["mono"], "OPEN TO MEANINGFUL COLLABORATIONS", 954, 365, 11, "#A7B7D0")
     )
-    return svg("Tan Ted Hang", "Building technology with purpose, curiosity, and a human point of view.", 1200, 500, body, style)
+    return svg("Tan Ted Hang", "Technology with a human point of view.", 1200, 420, body)
 
 
 def projects_glass(fonts: dict[str, TTFont]) -> str:
@@ -264,13 +256,46 @@ def project(fonts: dict[str, TTFont]) -> str:
     return svg("The Celestial Archive", "Editorial poster for a bilingual, local-first, 78-card reflection experience.", 1200, 470, body)
 
 
+TYPING_LINES = (
+    "INFORMATION SYSTEMS + AI",
+    "INDEPENDENT DEVELOPMENT",
+    "CREATIVE TECHNOLOGY",
+    "HUMAN-CENTRED PRODUCTS",
+)
+
+
 def typing_static(fonts: dict[str, TTFont]) -> str:
+    body = '<rect width="1000" height="132" rx="14" fill="#071A39"/>'
+    for index, line in enumerate(TYPING_LINES):
+        body += outlined(fonts["mono"], line, 500, 29 + index * 27, 15, "#DDEEFF", "middle")
+    return svg("Professional introduction", ". ".join(TYPING_LINES) + ".", 1000, 132, body)
+
+
+def typing_animated(fonts: dict[str, TTFont]) -> str:
+    windows = ((0, 18, 24, 25), (25, 43, 49, 50), (50, 68, 74, 75), (75, 93, 99, 100))
+    styles = [
+        ".type{transform-box:fill-box;transform-origin:left center}",
+        "@media (prefers-reduced-motion:reduce){.type{animation:none!important}.type-1{transform:scaleX(1)}.type-2,.type-3,.type-4{transform:scaleX(.001)}}",
+    ]
+    defs = []
+    lines = []
+    for index, (line, window) in enumerate(zip(TYPING_LINES, windows), start=1):
+        start, reveal, hold, end = window
+        styles.append(
+            f'.type-{index}' + '{animation:type-' + str(index) + ' 16s steps(32,end) infinite}'
+            f'@keyframes type-{index}' + '{'
+            f'0%,{start}%{{transform:scaleX(.001)}}{reveal}%{{transform:scaleX(1)}}{hold}%{{transform:scaleX(1)}}{end}%,100%{{transform:scaleX(.001)}}'
+            '}'
+        )
+        defs.append(f'<clipPath id="type-{index}"><rect class="type type-{index}" x="200" y="0" width="600" height="72"/></clipPath>')
+        lines.append(outlined(fonts["mono"], line, 500, 45, 18, "#DDEEFF", "middle", group_attrs=f' clip-path="url(#type-{index})"'))
     body = (
-        '<rect width="1000" height="64" fill="#04044A"/>'
-        '<path d="M0 63.5H1000" stroke="#000675"/>'
-        + outlined(fonts["mono"], "INFORMATION SYSTEMS + ARTIFICIAL INTELLIGENCE", 500, 41, 18, "#00E7F5", "middle")
+        '<defs>' + "".join(defs) + '</defs>'
+        '<rect width="1000" height="72" rx="14" fill="#071A39"/>'
+        '<path d="M24 71.5H976" stroke="#9FD8FF" stroke-opacity=".22"/>'
+        + "".join(lines)
     )
-    return svg("Professional introduction", "Information Systems and Artificial Intelligence.", 1000, 64, body)
+    return svg("Animated professional introduction", ". ".join(TYPING_LINES) + ".", 1000, 72, body, "".join(styles))
 
 
 def tech_stack(fonts: dict[str, TTFont]) -> str:
@@ -301,6 +326,7 @@ def render(fonts: dict[str, TTFont]) -> dict[str, str]:
         "projects-glass.svg": projects_glass(fonts),
         "celestial-archive.svg": project(fonts),
         "typing-static.svg": typing_static(fonts),
+        "typing-animated.svg": typing_animated(fonts),
         "tech-stack.svg": tech_stack(fonts),
     }
 
