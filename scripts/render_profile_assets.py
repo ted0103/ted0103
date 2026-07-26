@@ -77,10 +77,11 @@ def outlined(
     return f"<g{group_attrs}>{content}</g>" if group_attrs else content
 
 
-def svg(title: str, desc: str, width: int, height: int, body: str, style: str = "") -> str:
+def svg(title: str, desc: str, width: int, height: int, body: str, style: str = "", intrinsic: bool = False) -> str:
+    dimensions = f' width="{width}" height="{height}"' if intrinsic else ""
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" '
-        f'viewBox="0 0 {width} {height}"><title id="title">{html.escape(title)}</title>'
+        f'viewBox="0 0 {width} {height}"{dimensions}><title id="title">{html.escape(title)}</title>'
         f'<desc id="desc">{html.escape(desc)}</desc>'
         f'{f"<style>{style}</style>" if style else ""}{body}</svg>\n'
     )
@@ -298,6 +299,41 @@ def typing_animated(fonts: dict[str, TTFont]) -> str:
     return svg("Animated professional introduction", ". ".join(TYPING_LINES) + ".", 1000, 72, body, "".join(styles))
 
 
+ACTIVITY_LINE = "Quiet momentum, built one useful commit at a time."
+
+
+def activity_static(fonts: dict[str, TTFont]) -> str:
+    body = (
+        '<rect width="1000" height="72" rx="14" fill="#071A39"/>'
+        '<path d="M24 71.5H976" stroke="#9FD8FF" stroke-opacity=".22"/>'
+        + outlined(fonts["mono"], ACTIVITY_LINE, 500, 45, 18, "#DDEEFF", "middle")
+    )
+    return svg("Quiet momentum", ACTIVITY_LINE, 1000, 72, body, intrinsic=True)
+
+
+def activity_animated(fonts: dict[str, TTFont]) -> str:
+    style = (
+        ".activity-type{animation:activity-type 12s steps(50,end) infinite;transform-box:fill-box;transform-origin:left center}"
+        "@keyframes activity-type{0%,3.3333333333%{transform:scaleX(.001)}36.6666666667%,93.3333333333%{transform:scaleX(1)}93.3333333334%,100%{transform:scaleX(.001)}}"
+    )
+    body = (
+        '<defs><clipPath id="activity-clip"><rect class="activity-type" x="224" y="0" width="552" height="72"/></clipPath></defs>'
+        '<rect width="1000" height="72" rx="14" fill="#071A39"/>'
+        '<path d="M24 71.5H976" stroke="#9FD8FF" stroke-opacity=".22"/>'
+        + outlined(
+            fonts["mono"],
+            ACTIVITY_LINE,
+            500,
+            45,
+            18,
+            "#DDEEFF",
+            "middle",
+            group_attrs=' clip-path="url(#activity-clip)"',
+        )
+    )
+    return svg("Animated quiet momentum", ACTIVITY_LINE, 1000, 72, body, style, intrinsic=True)
+
+
 def tech_stack(fonts: dict[str, TTFont]) -> str:
     style = """
       .cursor{animation:cursor 1.3s steps(1,end) infinite}
@@ -327,6 +363,8 @@ def render(fonts: dict[str, TTFont]) -> dict[str, str]:
         "celestial-archive.svg": project(fonts),
         "typing-static.svg": typing_static(fonts),
         "typing-animated.svg": typing_animated(fonts),
+        "activity-static.svg": activity_static(fonts),
+        "activity-animated.svg": activity_animated(fonts),
         "tech-stack.svg": tech_stack(fonts),
     }
 

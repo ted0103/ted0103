@@ -67,7 +67,10 @@ I use code to make ideas work and creative tools to make them understood. The to
 
 <img width="760" src="https://raw.githubusercontent.com/ted0103/ted0103/gh-pages/profile-cosmic-static.svg" alt="Ted's GitHub contribution skyline" />
 
-Quiet momentum, built one useful commit at a time.
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile/activity-static.svg" />
+  <img width="760" src="./assets/profile/activity-animated.svg" alt="Quiet momentum, built one useful commit at a time." />
+</picture>
 
 [![Explore the portfolio](https://img.shields.io/badge/EXPLORE_THE_PORTFOLIO-9FD8FF?style=for-the-badge&logo=safari&logoColor=071A39)](https://ted0103.github.io/) [![Start a conversation](https://img.shields.io/badge/START_A_CONVERSATION-10294B?style=for-the-badge&logo=gmail&logoColor=F8F6EE)](mailto:tedhangtan@gmail.com)
 
