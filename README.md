@@ -39,7 +39,21 @@ A bilingual, local-first 78-card reflection experience designed as a calm and pr
 
 </div>
 
-## `03 / CAPABILITIES`
+## `03 / CURRENT BUILD`
+
+<div align="center">
+
+### QuestMark
+
+A private-by-default app that sends students into the real world, then turns mission evidence and reflection into Proof Cards, XP, achievements, and a visible skill map.
+
+`REAL-WORLD QUESTS` · `EVIDENCE-BACKED SKILLS` · `NEXT.JS` · `LIQUID GLASS UI`
+
+[![Open live prototype](https://img.shields.io/badge/OPEN_LIVE_PROTOTYPE-9FD8FF?style=for-the-badge&logo=safari&logoColor=071A39)](https://questmark-ted.my-setia-mot-9282.chatgpt.site) [![View source](https://img.shields.io/badge/VIEW_SOURCE-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/questmark)
+
+</div>
+
+## `04 / CAPABILITIES`
 
 <div align="center">
 
@@ -61,7 +75,7 @@ A bilingual, local-first 78-card reflection experience designed as a calm and pr
 
 I use code to make ideas work and creative tools to make them understood. The toolkit will change as I learn; the goal stays the same—choose what helps the idea communicate clearly.
 
-## `04 / ACTIVITY`
+## `05 / ACTIVITY`
 
 <div align="center">
 
