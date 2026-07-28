@@ -23,9 +23,21 @@ Chairing a society taught me that direction matters, but people matter more. I b
 
 > **NEXT EXPERIMENT** — I’m exploring AI-assisted tools that make difficult ideas easier to understand. The next build starts with a human problem, not a feature list.
 
-## `02 / FEATURED SYSTEM`
+## `02 / FEATURED SYSTEMS`
 
 <div align="center">
+
+<img width="100%" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
+
+### QuestMark
+
+An installable, private-by-default PWA that sends students into the real world, then turns mission evidence and reflection into Proof Cards, XP, achievements, and a visible skill map.
+
+`REAL-WORLD QUESTS` · `EVIDENCE-BACKED SKILLS` · `OFFLINE PWA` · `LIQUID GLASS UI`
+
+[![Open QuestMark](https://img.shields.io/badge/OPEN_QUESTMARK-9FD8FF?style=for-the-badge&logo=safari&logoColor=071A39)](https://ted0103.github.io/questmark/)
+
+<br/>
 
 <img width="100%" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive — a bilingual, local-first reflection system" />
 
@@ -39,21 +51,7 @@ A bilingual, local-first 78-card reflection experience designed as a calm and pr
 
 </div>
 
-## `03 / CURRENT BUILD`
-
-<div align="center">
-
-### QuestMark
-
-A private-by-default app that sends students into the real world, then turns mission evidence and reflection into Proof Cards, XP, achievements, and a visible skill map.
-
-`REAL-WORLD QUESTS` · `EVIDENCE-BACKED SKILLS` · `NEXT.JS` · `LIQUID GLASS UI`
-
-[![Open live prototype](https://img.shields.io/badge/OPEN_LIVE_PROTOTYPE-9FD8FF?style=for-the-badge&logo=safari&logoColor=071A39)](https://questmark-ted.my-setia-mot-9282.chatgpt.site) [![View source](https://img.shields.io/badge/VIEW_SOURCE-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/questmark)
-
-</div>
-
-## `04 / CAPABILITIES`
+## `03 / CAPABILITIES`
 
 <div align="center">
 
@@ -75,7 +73,7 @@ A private-by-default app that sends students into the real world, then turns mis
 
 I use code to make ideas work and creative tools to make them understood. The toolkit will change as I learn; the goal stays the same—choose what helps the idea communicate clearly.
 
-## `05 / ACTIVITY`
+## `04 / ACTIVITY`
 
 <div align="center">
 
