@@ -27,7 +27,7 @@ Chairing a society taught me that direction matters, but people matter more. I b
 
 <div align="center">
 
-<img width="100%" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
+<img width="254" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
 
 ### QuestMark
 
@@ -39,7 +39,7 @@ An installable, private-by-default PWA that sends students into the real world, 
 
 <br/>
 
-<img width="100%" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive — a bilingual, local-first reflection system" />
+<img width="254" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive — a bilingual, local-first reflection system" />
 
 ### Celestial Archive · 天穹秘典
 
