@@ -51,6 +51,18 @@ A bilingual, local-first 78-card reflection experience designed as a calm and pr
 
 </div>
 
+<div align="center">
+
+**Open-source agent skill**
+
+### github/ai-project-checkpoint
+
+A portable Git-based handoff that helps AI coding tasks resume from a compact, integrity-checked Markdown file.
+
+[View repository →](https://github.com/ted0103/ai-project-checkpoint)
+
+</div>
+
 ## `03 / CAPABILITIES`
 
 <div align="center">
