@@ -25,55 +25,43 @@ Chairing a society taught me that direction matters, but people matter more. I b
 
 ## `02 / FEATURED SYSTEMS`
 
-<div align="center">
-
-<img width="254" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
-
-### QuestMark
-
-An installable, private-by-default PWA that sends students into the real world, then turns mission evidence and reflection into Proof Cards, XP, achievements, and a visible skill map.
-
-`REAL-WORLD QUESTS` · `EVIDENCE-BACKED SKILLS` · `OFFLINE PWA` · `LIQUID GLASS UI`
-
-[![Open QuestMark](https://img.shields.io/badge/OPEN_QUESTMARK-9FD8FF?style=for-the-badge&logo=safari&logoColor=071A39)](https://ted0103.github.io/questmark/)
-
-<br/>
-
-<img width="254" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive — a bilingual, local-first reflection system" />
-
-### Celestial Archive · 天穹秘典
-
-A bilingual, local-first 78-card reflection experience designed as a calm and private space across mobile and desktop.
-
-`78 CARDS` · `BILINGUAL` · `LOCAL-FIRST` · `MOBILE + DESKTOP`
-
-[![Open live system](https://img.shields.io/badge/OPEN_LIVE_SYSTEM-D4B06A?style=for-the-badge&logo=safari&logoColor=071A39)](https://ted0103.github.io/celestial-archive/) [![View source](https://img.shields.io/badge/VIEW_SOURCE-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/celestial-archive)
-
-</div>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <img width="240" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
+      <h3>QuestMark</h3>
+      <p>A private-by-default PWA that turns real-world missions into evidence-backed skills, XP, achievements, and Proof Cards.</p>
+      <p><code>REAL-WORLD QUESTS</code><br/><code>OFFLINE PWA</code></p>
+      <p><a href="https://ted0103.github.io/questmark/"><strong>Open system ↗</strong></a></p>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <img width="240" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive, a bilingual local-first reflection system" />
+      <h3>Celestial Archive · 天穹秘典</h3>
+      <p>A bilingual, local-first 78-card reflection experience designed as a calm and private space across mobile and desktop.</p>
+      <p><code>78 CARDS</code><br/><code>LOCAL-FIRST</code></p>
+      <p><a href="https://ted0103.github.io/celestial-archive/"><strong>Open system ↗</strong></a> · <a href="https://github.com/ted0103/celestial-archive"><strong>Source</strong></a></p>
+    </td>
+  </tr>
+</table>
 
 ## `03 / OPEN SOURCE`
 
-<div align="center">
-
-<img width="150" src="./assets/profile/ai-project-checkpoint-logo.png" alt="" />
-
-### Project Checkpoint
-
-Portable, integrity-checked Git handoffs that preserve the working source, accepted decisions, and exact next action.
-
-[![View Project Checkpoint](https://img.shields.io/badge/VIEW_PROJECT_CHECKPOINT-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/ai-project-checkpoint)
-
-<br/>
-
-<img width="150" src="./assets/profile/review-money-movement-logo.png" alt="" />
-
-### Review Money Movement
-
-Evidence-first review for code that transfers, calculates, settles, refunds, or reconciles money.
-
-[![View Review Money Movement](https://img.shields.io/badge/VIEW_MONEY_MOVEMENT-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/review-money-movement)
-
-</div>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="50%" valign="middle" align="center">
+      <img width="72" src="./assets/profile/ai-project-checkpoint-logo.png" alt="" /><br/>
+      <strong>Project Checkpoint</strong><br/>
+      <sub>Portable, integrity-checked Git handoffs for AI coding tasks.</sub><br/><br/>
+      <a href="https://github.com/ted0103/ai-project-checkpoint"><strong>Repository ↗</strong></a>
+    </td>
+    <td width="50%" valign="middle" align="center">
+      <img width="72" src="./assets/profile/review-money-movement-logo.png" alt="" /><br/>
+      <strong>Review Money Movement</strong><br/>
+      <sub>Evidence-first review for code that changes financial state.</sub><br/><br/>
+      <a href="https://github.com/ted0103/review-money-movement"><strong>Repository ↗</strong></a>
+    </td>
+  </tr>
+</table>
 
 ## `04 / CAPABILITIES`
 
