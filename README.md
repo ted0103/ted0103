@@ -31,14 +31,14 @@ Chairing a society taught me that direction matters, but people matter more. I b
       <img width="240" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
       <h3>QuestMark</h3>
       <p>A private-by-default PWA that turns real-world missions into evidence-backed skills, XP, achievements, and Proof Cards.</p>
-      <p><code>REAL-WORLD QUESTS</code><br/><code>OFFLINE PWA</code></p>
+      <p><kbd>REAL-WORLD QUESTS</kbd><br/><kbd>OFFLINE PWA</kbd></p>
       <p><a href="https://ted0103.github.io/questmark/"><strong>Open system ↗</strong></a></p>
     </td>
     <td width="50%" valign="top" align="center">
       <img width="240" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive, a bilingual local-first reflection system" />
       <h3>Celestial Archive · 天穹秘典</h3>
       <p>A bilingual, local-first 78-card reflection experience designed as a calm and private space across mobile and desktop.</p>
-      <p><code>78 CARDS</code><br/><code>LOCAL-FIRST</code></p>
+      <p><kbd>78 CARDS</kbd><br/><kbd>LOCAL-FIRST</kbd></p>
       <p><a href="https://ted0103.github.io/celestial-archive/"><strong>Open system ↗</strong></a> · <a href="https://github.com/ted0103/celestial-archive"><strong>Source</strong></a></p>
     </td>
   </tr>
