@@ -32,7 +32,7 @@ Chairing a society taught me that direction matters, but people matter more. I b
       <h3>QuestMark</h3>
       <p>A private-by-default PWA that turns real-world missions into evidence-backed skills, XP, achievements, and Proof Cards.</p>
       <p><kbd>REAL-WORLD QUESTS</kbd><br/><kbd>OFFLINE PWA</kbd></p>
-      <p><a href="https://ted0103.github.io/questmark/"><strong>Open system ↗</strong></a></p>
+      <p><a href="https://ted0103.github.io/questmark/"><strong>Open system ↗</strong></a>· <a href="https://github.com/ted0103/questmark"><strong>Source</strong></a></p>
     </td>
     <td width="50%" valign="top" align="center">
       <img width="240" src="./assets/profile/celestial-archive.svg" alt="The Celestial Archive, a bilingual local-first reflection system" />
