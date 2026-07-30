@@ -51,19 +51,31 @@ A bilingual, local-first 78-card reflection experience designed as a calm and pr
 
 </div>
 
+## `03 / OPEN SOURCE`
+
 <div align="center">
 
-**Open-source agent skill**
+<img width="150" src="./assets/profile/ai-project-checkpoint-logo.png" alt="" />
 
-### github/ai-project-checkpoint
+### Project Checkpoint
 
-A portable Git-based handoff that helps AI coding tasks resume from a compact, integrity-checked Markdown file.
+Portable, integrity-checked Git handoffs that preserve the working source, accepted decisions, and exact next action.
 
-[View repository →](https://github.com/ted0103/ai-project-checkpoint)
+[![View Project Checkpoint](https://img.shields.io/badge/VIEW_PROJECT_CHECKPOINT-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/ai-project-checkpoint)
+
+<br/>
+
+<img width="150" src="./assets/profile/review-money-movement-logo.png" alt="" />
+
+### Review Money Movement
+
+Evidence-first review for code that transfers, calculates, settles, refunds, or reconciles money.
+
+[![View Review Money Movement](https://img.shields.io/badge/VIEW_MONEY_MOVEMENT-071A39?style=for-the-badge&logo=github&logoColor=F8F6EE)](https://github.com/ted0103/review-money-movement)
 
 </div>
 
-## `03 / CAPABILITIES`
+## `04 / CAPABILITIES`
 
 <div align="center">
 
@@ -85,7 +97,7 @@ A portable Git-based handoff that helps AI coding tasks resume from a compact, i
 
 I use code to make ideas work and creative tools to make them understood. The toolkit will change as I learn; the goal stays the same—choose what helps the idea communicate clearly.
 
-## `04 / ACTIVITY`
+## `05 / ACTIVITY`
 
 <div align="center">
 
