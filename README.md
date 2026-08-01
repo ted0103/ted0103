@@ -27,16 +27,6 @@ Chairing a society taught me that direction matters, but people matter more. I b
 
 <table role="presentation" width="100%">
   <tr>
-    <td colspan="2" valign="top" align="center">
-      <img width="132" src="./assets/profile/callneuron-logo.png" alt="CallNeuron phone handset and connected neural nodes logo" />
-      <h3>CallNeuron</h3>
-      <p>A consent-first CALL-E operator that turns an approved scholarship shortlist into one polite conversation and a clear human follow-up.</p>
-      <p><kbd>REAL CALL-E WORKFLOW</kbd> <kbd>CONSENT FIRST</kbd> <kbd>OPEN SOURCE</kbd></p>
-      <p><a href="https://call-neuron-preview.pages.dev/"><strong>Open operator ↗</strong></a> · <a href="https://github.com/ted0103/awesome-phone-call-agents/tree/feat/call-neuron/apps/typescript/call-neuron"><strong>Source</strong></a></p>
-      <br/>
-    </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top" align="center">
       <img width="240" src="./assets/profile/questmark-banner.webp" alt="QuestMark liquid-glass globe surrounded by communication, courage, and observation skill signals" />
       <h3>QuestMark</h3>
@@ -69,6 +59,15 @@ Chairing a society taught me that direction matters, but people matter more. I b
       <strong>Review Money Movement</strong><br/>
       <sub>Evidence-first review for code that changes financial state.</sub><br/><br/>
       <a href="https://github.com/ted0103/review-money-movement"><strong>Repository ↗</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="middle" align="center">
+      <br/>
+      <img width="104" src="./assets/profile/callneuron-logo.png" alt="CallNeuron phone handset and connected neural nodes logo" /><br/>
+      <strong>CallNeuron</strong><br/>
+      <sub>Consent-first CALL-E scholarship outreach with an explicit human handoff.</sub><br/><br/>
+      <a href="https://github.com/ted0103/awesome-phone-call-agents/tree/feat/call-neuron/apps/typescript/call-neuron"><strong>Source ↗</strong></a> · <a href="https://call-neuron-preview.pages.dev/"><strong>Open live</strong></a>
     </td>
   </tr>
 </table>
