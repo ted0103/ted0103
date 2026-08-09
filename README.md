@@ -71,7 +71,7 @@ Chairing a society taught me that direction matters, but people matter more. I b
     </td>
     <td width="50%" valign="middle" align="center">
       <br/>
-      <img width="132" src="./assets/profile/find-my-files-logo.png" alt="Find My Files folder and search-path logo" /><br/>
+      <img width="132" src="./assets/profile/find-my-files-logo.png" alt="Find My Files folder, magnifier, and connected search-path logo" /><br/>
       <strong>Find My Files</strong><br/>
       <sub>Local-only macOS file discovery with scoped search and read-only reports.</sub><br/><br/>
       <a href="https://github.com/ted0103/find-my-files"><strong>Repository ↗</strong></a>
